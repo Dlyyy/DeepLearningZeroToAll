@@ -41,10 +41,10 @@ import numpy as np
 tf.set_random_seed(777)  # for reproducibility
 
 # Predicting animal type based on various features
-xy = np.loadtxt('data-04-zoo.csv', delimiter=',', dtype=np.float32)
+xy = np.loadtxt('E:/PYTHONPROJECT01/DeepLearningZeroToAll-master/data-04-zoo.csv', delimiter=',', dtype=np.float32)
 X_data = xy[:, 0:-1]
 N = X_data.shape[0]
-y_data = xy[:, [-1]]
+y_data = xy[:, [-1]]#取最后一列
 
 # y_data has labels from 0 ~ 6
 print("y has one of the following values")
